@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
 import 'package:quiz_app/controllers/question_controller.dart';
-import 'package:quiz_app/models/Questions.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'progress_bar.dart';
@@ -38,14 +37,14 @@ class Body extends StatelessWidget {
                           "Question ${_questionController.questionNumber.value}",
                       style: Theme.of(context)
                           .textTheme
-                          .headline4
+                          .headlineMedium!
                           .copyWith(color: kSecondaryColor),
                       children: [
                         TextSpan(
                           text: "/${_questionController.questions.length}",
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall!
                               .copyWith(color: kSecondaryColor),
                         ),
                       ],
